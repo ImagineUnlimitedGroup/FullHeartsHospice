@@ -1,0 +1,81 @@
+// ------------------------------ 
+
+// Системные файлы
+@use 'sass:math';
+
+// -- Системные стили
+@import './normalize';
+@import './av';
+@import './px';
+
+// ------------------------------
+
+// Цветовые стили
+$blue: #07A0E1; // Primary
+$gray: #96A6AF; // Secondary
+$text: #181A3A; // Tertiary
+
+$contrasting: #000000;
+
+// ------------------------------
+
+// Разрешения экранов
+// WidthContainer
+$maxWC: 1180px;
+
+$wc5: 991px;
+$wc4: 767px;
+$wc3: 550px;
+$wc2: 474px;
+$wc1: 359px;
+
+$minWC: 320px;
+
+// ------------------------------
+
+// Система отступов
+// -- Переменные 
+// s - space
+$s1: 2px;
+$s2: 4px;
+$s3: 8px;
+$s4: 16px;
+$s5: 32px;
+$s6: 64px;
+$s7: 128px;
+$s8: 256px;
+
+
+// -- Классы
+.margin-top {
+	@include av('margin-top', $s7, $s6, $maxWC, $minWC);
+}
+
+.small-margin-top {
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+}
+
+// ------------------------------
+
+// Системные классы
+.container {
+	max-width: $maxWC;
+	margin: 0px auto;
+	padding: $s3 $s4;
+}
+
+.border {}
+
+.background-gradient {
+	background: linear-gradient(95deg, $gray 0%, $blue 100%);
+}
+
+// ------------------------------
+
+// -- Файлы стилей
+@import './fonts';
+@import './header';
+@import './heroSection';
+@import './footer';
+
+// ------------------------------

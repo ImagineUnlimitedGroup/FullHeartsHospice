@@ -1,0 +1,35 @@
+// ------------------------------
+
+
+// Подключение шрифтов
+// -- Arimo
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+// -- PT Serif
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+
+// ------------------------------
+
+
+// Текстовые стили
+.title {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 700;
+
+	color: $text;
+}
+
+.text {
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+
+	color: $text;
+}
+
+
+// ------------------------------

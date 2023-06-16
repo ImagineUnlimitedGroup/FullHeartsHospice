@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ---------------- */
+.margin-top {
+  margin-top: 128px;
+}
+@media (max-width: 1180px) {
+  .margin-top {
+    margin-top: calc(64px + 64 * ((100vw - 320px) / 860));
+  }
+}
+
+.small-margin-top {
+  margin-top: 64px;
+}
+@media (max-width: 1180px) {
+  .small-margin-top {
+    margin-top: calc(32px + 32 * ((100vw - 320px) / 860));
+  }
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 8px 16px;
+}
+
+.background-gradient {
+  background: linear-gradient(95deg, #96A6AF 0%, #07A0E1 100%);
+}
+
+.title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  color: #181A3A;
+}
+
+.text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #181A3A;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 4px;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__contact-us {
+  margin-top: 16px;
+  display: block;
+  background-color: #fff;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  line-height: 100%;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media (max-width: 1180px) {
+  .header__contact-us {
+    margin-top: calc(8px + 8 * ((100vw - 320px) / 860));
+  }
+}
+@media (max-width: 1180px) {
+  .header__contact-us {
+    font-size: calc(13px + 3 * ((100vw - 320px) / 860));
+  }
+}
+
+.languages {
+  display: none;
+}
+
+.header__logo {
+  flex: 1 1 auto;
+}
+.header__logo img {
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 1180px) {
+  .header__logo img {
+    width: calc(45px + 25 * ((100vw - 320px) / 860));
+  }
+}
+@media (max-width: 1180px) {
+  .header__logo img {
+    height: calc(45px + 25 * ((100vw - 320px) / 860));
+  }
+}
+
+.hero-section__container {
+  padding-top: 154px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .hero-section__container {
+    padding-top: 114px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.hero-section__body {
+  margin-top: -128px;
+}
+@media (max-width: 991px) {
+  .hero-section__body {
+    margin-top: 32px;
+    text-align: center;
+  }
+}
+.hero-section__logo img {
+  width: 500px;
+  height: 500px;
+}
+@media (max-width: 1180px) {
+  .hero-section__logo img {
+    width: calc(220px + 280 * ((100vw - 320px) / 860));
+  }
+}
+@media (max-width: 1180px) {
+  .hero-section__logo img {
+    height: calc(220px + 280 * ((100vw - 320px) / 860));
+  }
+}
+.hero-section__title {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+@media (max-width: 1180px) {
+  .hero-section__title {
+    font-size: calc(40px + 40 * ((100vw - 320px) / 860));
+  }
+}
+.hero-section__subtitle {
+  margin-top: 4px;
+  font-size: 35px;
+}
+@media (max-width: 1180px) {
+  .hero-section__subtitle {
+    font-size: calc(22px + 13 * ((100vw - 320px) / 860));
+  }
+}
+.hero-section__contact-us {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 16px 32px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 15px;
+}

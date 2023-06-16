@@ -1,0 +1,38 @@
+.header {
+	position: fixed;
+	width: 100%;
+	padding: $s2;
+
+	&__container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__contact-us {
+		@include av('margin-top', $s4, $s3, $maxWC, $minWC);
+		display: block;
+		background-color: #fff;
+		padding: $s3 $s4;
+		text-transform: uppercase;
+		border-radius: 5px;
+		line-height: 100%;
+		font-weight: 700;
+
+		@include av('font-size', 16px, 13px, $maxWC, $minWC);
+		// @include av('margin-right', $s5, $s4, $maxWC, $minWC);
+	}
+}
+
+.languages {
+	display: none;
+}
+
+.header__logo {
+	flex: 1 1 auto;
+
+	img {
+		@include av('width', 70px, 45px, $maxWC, $minWC);
+		@include av('height', 70px, 45px, $maxWC, $minWC);
+	}
+}

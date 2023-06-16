@@ -1,0 +1,15 @@
+@function su($number) {
+  // Strip units
+  @return $number / ($number * 0 + 1);
+}
+
+
+@mixin av($property, $startSize, $minSize, $maxContainer, $minContainer) {
+  $addSize: su($startSize - $minSize);
+
+  #{$property}: $startSize;
+
+  @media (max-width: #{$maxContainer}) {
+    #{$property}: calc(#{$minSize} + #{$addSize} * ((100vw - #{$minContainer}) / #{su($maxContainer) - su($minContainer)}));
+  }
+}
