@@ -1,3 +1,31 @@
-footer {
-	margin-top: $s8+100;
+.footer {
+	margin-top: $s7;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: $s4;
+	}
+
+	span {
+		display: block;
+		font-family: 'Arial';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #FFFFFF;
+	}
+
+	@media (max-width: $wc2) {
+		span {
+			
+		}
+
+		&__container {
+			flex-direction: column;
+			gap: $s2;
+		}
+	}
+
 }
