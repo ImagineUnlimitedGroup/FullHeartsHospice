@@ -12,6 +12,10 @@
 			flex-direction: column;
 			justify-content: center;
 		}
+
+		@media (max-width: $wc3) {
+			padding-top: $s6 + 30;
+		}
 	}
 
 	&__body {
@@ -36,13 +40,13 @@
 	}
 
 	&__subtitle {
-		margin-top: $s2;
+		margin-top: $s3;
 		@include av('font-size', 35px, 22px, $maxWC, $minWC);
 	}
 
 	&__contact-us {
 		display: inline-block;
-		margin-top: $s4;
+		margin-top: $s5;
 		padding: $s4 $s5;
 		color: #fff;
 		font-weight: 700;

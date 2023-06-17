@@ -19,6 +19,8 @@
 		line-height: 100%;
 		font-weight: 700;
 
+		color: $text;
+
 		@include av('font-size', 16px, 13px, $maxWC, $minWC);
 		// @include av('margin-right', $s5, $s4, $maxWC, $minWC);
 	}

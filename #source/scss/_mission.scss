@@ -1,0 +1,57 @@
+.mission {
+	margin-top: $s6;
+	min-height: 500px;
+	background-image: url('.././img/ellipse.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+
+	@media (max-width: $maxWC) {
+		background-position: 50% 50%;
+	}
+
+	@media (max-width: $wc3) {
+		margin-top: $s5;
+		min-height: 400px;
+	}
+	
+	&__container {
+		padding-top: $s7;
+		padding-left: $s6;
+
+		@media (max-width: $maxWC) {
+			padding-left: 0;
+			text-align: center;
+		}
+
+		@media (max-width: $wc3) {
+			padding: $s6 $s3 $s3 0;
+			padding-top: $s6;
+		}
+	}
+
+	&__title {
+		font-family: 'Arial';
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+		margin-bottom: $s3;
+	}
+
+	p {
+		padding-top: $s3;
+		max-width: 500px;
+		font-family: 'Arial';
+		@include av('font-size', 24px, 18px, $maxWC, $minWC);
+		line-height: 23px;
+
+		color: #FFFFFF;
+
+		@media (max-width: $maxWC) {
+			margin: 0 auto;
+		}
+	}
+}

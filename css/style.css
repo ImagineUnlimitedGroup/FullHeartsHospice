@@ -121,12 +121,41 @@ h6 {
   color: #181A3A;
 }
 
-.text {
+.h2-title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #181A3A;
+}
+@media (max-width: 1180px) {
+  .h2-title {
+    font-size: calc(24px + 12 * ((100vw - 320px) / 860));
+  }
+}
+
+.h3-title {
+  font-family: "Times New Roman";
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+  color: #181A3A;
+}
+@media (max-width: 1180px) {
+  .h3-title {
+    font-size: calc(24px + 6 * ((100vw - 320px) / 860));
+  }
+}
+
+body {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
   color: #181A3A;
 }
 
@@ -149,6 +178,7 @@ h6 {
   border-radius: 5px;
   line-height: 100%;
   font-weight: 700;
+  color: #181A3A;
   font-size: 16px;
 }
 @media (max-width: 1180px) {
@@ -198,6 +228,11 @@ h6 {
     justify-content: center;
   }
 }
+@media (max-width: 550px) {
+  .hero-section__container {
+    padding-top: 94px;
+  }
+}
 .hero-section__body {
   margin-top: -128px;
 }
@@ -231,7 +266,7 @@ h6 {
   }
 }
 .hero-section__subtitle {
-  margin-top: 4px;
+  margin-top: 8px;
   font-size: 35px;
 }
 @media (max-width: 1180px) {
@@ -241,10 +276,178 @@ h6 {
 }
 .hero-section__contact-us {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 32px;
   padding: 16px 32px;
   color: #fff;
   font-weight: 700;
   font-size: 24px;
   border-radius: 15px;
+}
+
+.services {
+  margin-top: 128px;
+}
+.services__list {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1180px) {
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .services__list {
+    display: block;
+  }
+}
+.services__li {
+  border-top: 2px rgba(150, 166, 175, 0.3) solid;
+  border-bottom: 2px rgba(150, 166, 175, 0.3) solid;
+  padding: 16px 0;
+}
+@media (max-width: 767px) {
+  .services__li {
+    border-width: 0 0 2px 0;
+  }
+  .services__li:first-child {
+    border-width: 2px 0 2px 0;
+  }
+}
+@media (max-width: 474px) {
+  .services__li {
+    padding: 8px 0;
+  }
+}
+
+.service__title {
+  display: flex;
+  align-items: top;
+}
+.service__title h3 {
+  flex: 1 1 auto;
+  margin-right: 8px;
+}
+.service__title img {
+  display: none;
+  transition: 0.1s;
+  margin-top: 4px;
+  opacity: 60%;
+}
+@media (max-width: 767px) {
+  .service__title img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding-right: 4px;
+  }
+}
+.service__description {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.1;
+  max-width: 90%;
+}
+.service__description li {
+  display: flex;
+  align-items: baseline;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 8px;
+}
+.service__description li span {
+  display: block;
+}
+@media (max-width: 1180px) {
+  .service__description {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 860));
+  }
+}
+@media (max-width: 767px) {
+  .service__description {
+    display: none;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 474px) {
+  .service__description {
+    max-width: 98%;
+  }
+}
+
+.active {
+  display: block;
+}
+.active img {
+  transform: rotate(45deg);
+  padding: 0;
+}
+
+.mission {
+  margin-top: 64px;
+  min-height: 500px;
+  background-image: url(".././img/ellipse.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+@media (max-width: 1180px) {
+  .mission {
+    background-position: 50% 50%;
+  }
+}
+@media (max-width: 550px) {
+  .mission {
+    margin-top: 32px;
+    min-height: 400px;
+  }
+}
+.mission__container {
+  padding-top: 128px;
+  padding-left: 64px;
+}
+@media (max-width: 1180px) {
+  .mission__container {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .mission__container {
+    padding: 64px 8px 8px 0;
+    padding-top: 64px;
+  }
+}
+.mission__title {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.mission p {
+  padding-top: 8px;
+  max-width: 500px;
+  font-family: "Arial";
+  font-size: 24px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+@media (max-width: 1180px) {
+  .mission p {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 860));
+  }
+}
+@media (max-width: 1180px) {
+  .mission p {
+    margin: 0 auto;
+  }
+}
+
+footer {
+  margin-top: 356px;
 }
