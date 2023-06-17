@@ -14,10 +14,10 @@
 		margin-top: $s5;
 		min-height: 400px;
 	}
-	
+
 	&__container {
 		padding-top: $s7;
-		padding-left: $s6;
+		padding-left: $s7;
 
 		@media (max-width: $maxWC) {
 			padding-left: 0;

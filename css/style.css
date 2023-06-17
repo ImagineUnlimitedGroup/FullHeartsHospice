@@ -160,6 +160,7 @@ body {
 }
 
 .header {
+  z-index: 100;
   position: fixed;
   width: 100%;
   padding: 4px;
@@ -228,7 +229,7 @@ body {
     justify-content: center;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 474px) {
   .hero-section__container {
     padding-top: 94px;
   }
@@ -406,7 +407,7 @@ body {
 }
 .mission__container {
   padding-top: 128px;
-  padding-left: 64px;
+  padding-left: 128px;
 }
 @media (max-width: 1180px) {
   .mission__container {
