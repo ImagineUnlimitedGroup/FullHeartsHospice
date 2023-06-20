@@ -22,9 +22,9 @@ const options = {
 };
 
 
+
 // Функция определяющая нужный номер
 function changePhoneNumber() {
-	console.log(1)
 	phone = ''
 
 	// Получаем нужный день недели и час в формате "Mon, 19"
@@ -52,6 +52,11 @@ function changePhoneNumber() {
 			phone = '+17204869294'
 		}
 	}
+
+	phone = "tel:" + phone
+
+	document.getElementById("headerBtn").href = phone
+	document.getElementById("heroBtn").href = phone
 }
 
 changePhoneNumber()
