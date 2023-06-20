@@ -11,6 +11,7 @@
 	}
 
 	&__contact-us {
+		max-height: 135px;
 		@include av('margin-top', $s4, $s3, $maxWC, $minWC);
 		display: block;
 		background-color: #fff;
@@ -23,12 +24,24 @@
 		color: $text;
 
 		@include av('font-size', 16px, 13px, $maxWC, $minWC);
-		// @include av('margin-right', $s5, $s4, $maxWC, $minWC);
+		@include av('margin-right', $s4, $s3, $maxWC, $minWC);
 	}
 }
 
 .languages {
-	display: none;
+	max-height: 135px;
+	@include av('margin-top', $s4, $s3, $maxWC, $minWC);
+	display: block;
+	background-color: #fff;
+	padding: $s3 $s4;
+	text-transform: uppercase;
+	border-radius: 5px;
+	line-height: 100%;
+	font-weight: 700;
+
+	color: $text;
+
+	@include av('font-size', 16px, 13px, $maxWC, $minWC);
 }
 
 .header__logo {

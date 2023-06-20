@@ -31,6 +31,11 @@
 		img {
 			@include av('width', 500px, 220px, $maxWC, $minWC);
 			@include av('height', 500px, 220px, $maxWC, $minWC);
+
+			@media (max-width: $wc5) {
+				@include av('width', 350px, 220px, $maxWC, $minWC);
+				@include av('height', 350px, 220px, $maxWC, $minWC);
+			}
 		}
 	}
 

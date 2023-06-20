@@ -1,3 +1,4 @@
+// Делаем открывающийся список
 const list = document.querySelectorAll(".services__li")
 
 list.forEach(element => {
@@ -9,3 +10,49 @@ list.forEach(element => {
 		text.classList.toggle('active')
 	})
 });
+
+
+// Изменение номера телефона
+
+// Устанавливаем нужный часовой пояс
+const options = {
+	timeZone: "America/Denver",
+	hour: "numeric",
+  weekday: "short"
+};
+
+
+// Функция определяющая нужный номер
+function changePhoneNumber() {
+	console.log(1)
+	phone = ''
+
+	// Получаем нужный день недели и час в формате "Mon, 19"
+	const now = new Date();
+	let time = now.toLocaleString("en-GB", options);
+	
+	date = time.split(',')
+
+	day = date[0]
+
+	hour = Number(date[1])
+
+	// Определяем номер телефона
+
+	// Рабочие часы:
+	if (hour > 9 && hour < 17) {
+		phone = '+17203810181'
+	} else {
+		// Первый человек:
+		if (day == 'Mon' || "Wed" || "Fri" || "Sun") {
+			phone = '+18186243522'
+		} else {
+
+			// Второй человек
+			phone = '+17204869294'
+		}
+	}
+}
+
+changePhoneNumber()
+setInterval(changePhoneNumber, 120000)
