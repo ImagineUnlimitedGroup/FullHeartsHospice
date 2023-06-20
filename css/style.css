@@ -234,11 +234,15 @@ body {
 }
 
 .languages {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/arrow.svg") 90% 50%/20px 20px no-repeat;
   max-height: 135px;
   margin-top: 16px;
   display: block;
   background-color: #fff;
-  padding: 8px 16px;
+  padding: 8px 32px 8px 16px;
   text-transform: uppercase;
   border-radius: 5px;
   line-height: 100%;

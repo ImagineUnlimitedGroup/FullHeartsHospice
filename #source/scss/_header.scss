@@ -29,11 +29,13 @@
 }
 
 .languages {
+	appearance: none;
+	background: url("../img/arrow.svg") 90% 50% / 20px 20px no-repeat;
 	max-height: 135px;
 	@include av('margin-top', $s4, $s3, $maxWC, $minWC);
 	display: block;
 	background-color: #fff;
-	padding: $s3 $s4;
+	padding: $s3 $s5 $s3 $s4;
 	text-transform: uppercase;
 	border-radius: 5px;
 	line-height: 100%;
